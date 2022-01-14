@@ -1,16 +1,10 @@
-<div>
 
-<span class="c2">Media and the Portuguese 2022 elections</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 61.50px; height: 61.50px;">![](images/image9.jpg)</span>
 
-</div>
+# Legislativas2022 - Media Analysis
 
-<span class="c21">#Legislativas2022</span>
+<span class="c2">How do media outlets' Facebook pages,  cover the main candidates to the Portuguese 2022 legislative elections</span>
 
-<span class="c37 c39 c55">MEDIA ANALYSIS</span>
 
-<span class="c2">How do media outlets' Facebook cover the main candidates to the Portuguese 2022 legislative elections</span>
-
-<span>by Jorge Gomes</span>
 
 # <span class="c24">KEY POINTS</span>
 
@@ -71,8 +65,6 @@
 <span class="c16"></span>
 
 <span class="c16"></span>
-
-<span class="c54">INTRODUCTION</span> <span class="c46">(cont)</span>
 
 <span class="c38 c36">The second chart aggregated mentions by media outlets, resulting in very interesting results, with the National News Agency taking the spotlight due to its non-diversity.</span> <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 286.67px;">![](images/image21.png)</span>
 
@@ -326,7 +318,6 @@
 
 <span class="c24"></span>
 
-<span class="c54">MEDIA OUTLETS</span> <span class="c3">(cont)</span>
 
 <span class="c8">At the date of the data extraction, this was the follower count for each media outlet’s page on Facebook</span>
 
@@ -388,8 +379,6 @@
 
 <span class="c6"></span>
 
-# <span>SETTINGS & KEYWORDS</span> <span class="c35">(cont)</span>
-
 <span class="c6"></span>
 
 <span class="c6">Catarina Martins</span>
@@ -413,8 +402,6 @@
 <span class="c6"></span>
 
 <span class="c6"></span>
-
-# <span>SETTINGS & KEYWORDS</span> <span class="c35">(cont)</span>
 
 <span class="c6">Inês de Sousa Real</span>
 
@@ -441,8 +428,6 @@
 <span class="c6"></span>
 
 # <span class="c24"></span>
-
-# <span>SETTINGS & KEYWORDS</span> <span class="c35">(cont)</span>
 
 <span class="c6">Rui Tavares</span>
 
@@ -474,8 +459,6 @@
 <span class="c10 c37 c41"></span>
 
 <span class="c10 c37 c41"></span>
-
-<span class="c10">METHODOLOGY</span> <span class="c17">(cont)</span>
 
 <span class="c8">The “counters” spreadsheet looks like this</span>
 
@@ -807,8 +790,6 @@
 
 # <span class="c24"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">António Costa</span>
 
 <span class="c2">Dataset extracted resulted in a .csv file with 2.7MB and 2416 rows.</span>
@@ -826,8 +807,6 @@
 <span class="c2"></span>
 
 # <span class="c24"></span>
-
-# <span>DATASETS</span> <span class="c3">(cont)</span>
 
 ## <span class="c11">Rui Rio</span>
 
@@ -853,8 +832,6 @@
 
 <span class="c2"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">Rui Rio</span>
 
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 385.33px;">![](images/image15.png)</span>
@@ -877,8 +854,6 @@
 
 <span class="c2"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">Catarina Martins</span>
 
 <span class="c2">Dataset extracted resulted in a .csv file with 1MB and 946 rows.</span>
@@ -896,8 +871,6 @@
 <span class="c2"></span>
 
 <span class="c8"></span>
-
-# <span>DATASETS</span> <span class="c3">(cont)</span>
 
 ## <span>Jerónimo de Sousa</span><sup>[[8]](#ftnt8)</sup>
 
@@ -918,8 +891,6 @@
 <span class="c2"></span>
 
 <span class="c2"></span>
-
-# <span>DATASETS</span> <span class="c3">(cont)</span>
 
 ## <span class="c11">Francisco Rodrigues dos Santos</span>
 
@@ -943,8 +914,6 @@
 
 <span class="c2"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">Inês de Sousa Real</span>
 
 <span class="c2">Dataset extracted resulted in a .csv file with 110kb and 85 rows.</span>
@@ -967,8 +936,6 @@
 
 <span class="c2"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">André Ventura</span>
 
 <span class="c2">Dataset extracted resulted in a .csv file with 908kb and 813 rows.</span>
@@ -990,8 +957,6 @@
 <span class="c2"></span>
 
 <span class="c2"></span>
-
-# <span>DATASETS</span> <span class="c3">(cont)</span>
 
 ## <span class="c11">André Ventura</span>
 
@@ -1019,8 +984,6 @@
 
 <span class="c2"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">João Cotrim Figueiredo</span>
 
 <span class="c2">Dataset extracted resulted in a .csv file with 127kb and 103 rows.</span>
@@ -1043,8 +1006,6 @@
 
 <span class="c2"></span>
 
-# <span>DATASETS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">João Cotrim Figueiredo</span>
 
 <span class="c2">However a quick search on ECO’s website shows us the reason why this happens</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 542.50px; height: 400.37px;">![](images/image8.png)</span>
@@ -1064,8 +1025,6 @@
 <span class="c2"></span>
 
 <span class="c2"></span>
-
-# <span>DATASETS</span> <span class="c3">(cont)</span>
 
 ## <span>Rui Tavares</span>
 
@@ -1100,8 +1059,6 @@
 <span class="c2"></span>
 
 <span>The observed trend on the preliminary analysis doesn’t change: Mentions by number of seats in Parliament decrease in line with what is expected, and “André Ventura” is the exceptio along with  “Rui Tavares” that also has a number of mentions that</span> <span>doesn’t</span><span class="c2"> reflect the party’s representation in parliament, probably due to the participation in televised debates,a good performance at those, and for  being the novelty candidate.</span>
-
-# <span>ANALYSIS</span> <span class="c3">(cont)</span>
 
 <span class="c2">Performing a standardization of the data, this is the overall picture of the combined datasets.</span>
 
@@ -1179,8 +1136,6 @@
 
 <span class="c2"></span>
 
-# <span>FURTHER ANALYSIS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">Shares</span>
 
 <span class="c2">“Shares”, per candidate, were calculated based on the datasets. “Catarina Martins”, with less mentions, amasses more shares, on Facebook, than Rui Rio. However both combined don’t surpass “André Ventura” in the number of shares.</span>
@@ -1207,8 +1162,6 @@
 
 <span class="c2"></span>
 
-# <span>FURTHER ANALYSIS</span> <span class="c3">(cont)</span>
-
 ## <span class="c11">Shares</span>
 
 <span>When analyzing the shares by media outlets, it’s clear the prevalence of “António Costa” in all media outlets, except on “Rádio Observador”. However we are talking about</span> <span class="c18">65</span><span> mentions, with no other candidate mention being shared by those that follow “Rádio Observador”. Also keep in mind that this page only has 1708 followers</span><sup>[[12]](#ftnt12)</sup><span class="c2">.</span>
@@ -1232,8 +1185,6 @@
 <span class="c2"></span>
 
 <span class="c2"></span>
-
-# <span>FURTHER ANALYSIS</span> <span class="c3">(cont)</span>
 
 ## <span class="c11">Likes</span>
 
@@ -1261,8 +1212,6 @@
 
 <span class="c2"></span>
 
-# <span>FURTHER ANALYSIS</span> <span class="c35">(cont)</span>
-
 <span>When exploring the amount of likes, per media outlet, that each candidate’s mention gets, it’s important to note the performance of “António Costa” that even in media outlets where he gets less mentions, gets a majority of likes, as observed in “SIC”</span> <span class="c18">where with only 30% of mentions gets 89.7% of likes</span><span class="c2">.</span>
 
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 402.67px;">![](images/image5.png "Total shares by candidate")</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 401.33px;">![](images/image31.png "Likes by media outlet")</span>
@@ -1284,8 +1233,6 @@
 <span class="c2"></span>
 
 <span class="c2"></span>
-
-# <span>FURTHER ANALYSIS</span> <span class="c35">(cont)</span>
 
 ## <span class="c11">LOVE vs ANGRY</span>
 
