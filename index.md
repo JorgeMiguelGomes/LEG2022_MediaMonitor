@@ -1409,8 +1409,10 @@ Passioante about open data, open source, civil society empowerment through techo
 
 “*What whiskey will not cure, there is no cure for*” – Irish proverb
   
-You can find my Portuguese tweets [here]((https://twitter.com/JGomes_PT) and my tweets in English [here](https://twitter.com/JGomes_EU). 
+You can find my Portuguese tweets [here](https://twitter.com/JGomes_PT) and my tweets in English [here](https://twitter.com/JGomes_EU). 
 
 [VOST Portugal National Coordinator](https://twitter.com/VOSTPT)
 
 [VOST Europe COO](https://twitter.com/VOSTeurope)
+  
+* * *
