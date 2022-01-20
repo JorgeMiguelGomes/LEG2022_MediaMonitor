@@ -1425,4 +1425,8 @@
 [[13]](#ftnt_ref13)<span class="c33">[ Full terms of this License can be found here](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)</span>
 
 </div>
+  
+# About the author
+  
+Economist. Data Science enthusiast. You can find my Portuguese tweets [here]((https://twitter.com/JGomes_PT) and my tweets in English [here](https://twitter.com/JGomes_EU)
 
