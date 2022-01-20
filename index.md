@@ -1350,7 +1350,7 @@
 
 <div>
 
-[[1]](#ftnt_ref1)<span class="c40"> </span><span class="c35"> [The tweet](https://twitter.com/JGomes_PT/status/1480208101378822144)<span class="c35">had</span> <span class="c35 c67">43490</span><span class="c9"> impressions on January 10th 2022\.</span>
+[[1]](#ftnt_ref1)<span class="c40"> </span><span class="c35"> [The tweet](https://twitter.com/JGomes_PT/status/1480208101378822144)<span class="c35"> had</span> <span class="c35 c67">43490</span><span class="c9"> impressions on January 10th 2022\.</span>
 
 </div>
 
