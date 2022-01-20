@@ -1336,13 +1336,13 @@
 
 <span class="c2">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License</span>
 
-<span>By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.</span><sup>[[13]](#ftnt13)</sup>
+<span>By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.</span>
 
 <span class="c37 c59"></span>
 
 <div>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 56.77px; height: 20.00px;">![](images/image34.png)</span><span>                                                                   </span>
+[![License](https://upload.wikimedia.org/wikipedia/commons/f/f1/Cc-by-nc-nd_icon.svg)]
 
 </div>
 
@@ -1350,7 +1350,7 @@
 
 <div>
 
-[[1]](#ftnt_ref1)<span class="c40"> </span><span class="c35">The tweet</span> <span class="c35 c52">[https://twitter.com/JGomes_PT/status/1480208101378822144](https://www.google.com/url?q=https://twitter.com/JGomes_PT/status/1480208101378822144&sa=D&source=editors&ust=1642174952476232&usg=AOvVaw1fooXpCV0emyhvuSYZQNN0)</span><span class="c35">had</span> <span class="c35 c67">43490</span><span class="c9"> impressions on January 10th 2022\.</span>
+[[1]](#ftnt_ref1)<span class="c40"> </span><span class="c35"> [The tweet](https://twitter.com/JGomes_PT/status/1480208101378822144)<span class="c35">had</span> <span class="c35 c67">43490</span><span class="c9"> impressions on January 10th 2022\.</span>
 
 </div>
 
@@ -1368,7 +1368,7 @@
 
 <div>
 
-[[4]](#ftnt_ref4)<span class="c40">[PT]</span> <span class="c27">[https://www.cision.pt/2021/09/imprensa-circulacao-paga-cresce-face-a-2020/](https://www.google.com/url?q=https://www.cision.pt/2021/09/imprensa-circulacao-paga-cresce-face-a-2020/&sa=D&source=editors&ust=1642174952477485&usg=AOvVaw275CVNAyqAkxdWGrosh6Rf)</span><span class="c33"> </span>
+[[4]](#ftnt_ref4)<span class="c40">[PT]</span><span class="c27">[Cision Report](https://www.cision.pt/2021/09/imprensa-circulacao-paga-cresce-face-a-2020/)</span><span class="c33"> </span>
 
 </div>
 
@@ -1380,7 +1380,7 @@
 
 <div>
 
-[[6]](#ftnt_ref6)<span class="c40"> </span><span class="c43">weighted  —  Likes 1x Shares 1x Comments 1x Love 1x Wow 1x Haha 1x Sad 1x Angry 1x Care 1x</span>
+[[6]](#ftnt_ref6)<span class="c40"> </span><span class="c43"> **weighted**  —  Likes 1x Shares 1x Comments 1x Love 1x Wow 1x Haha 1x Sad 1x Angry 1x Care 1x</span>
 
 </div>
 
@@ -1392,42 +1392,37 @@
 
 <div>
 
-[[8]](#ftnt_ref8)<span class="c33"> Although the official color of PCP (Portuguese Communist Party) is red, and the color of the coalition between PCP and the Portuguese Green party is blue, a decision was made to use yellow as the color for Jerónimo de Sousa, as both official colors don’t have enough contrast when joined with the other parties. The yellow chosen is the one from the flag of the former Soviet Union https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union</span>
+[[8]](#ftnt_ref8)<span class="c33"> Although the official color of PCP (Portuguese Communist Party) is red, and the color of the coalition between PCP and the Portuguese Green party is blue, a decision was made to use yellow as the color for Jerónimo de Sousa, as both official colors don’t have enough contrast when joined with the other parties. The yellow chosen is the one from the [flag of the former Soviet Union](https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union)</span>
 
 </div>
 
 <div>
 
-[[9]](#ftnt_ref9)<span class="c33"> This is an opinion</span>
+[[9]](#ftnt_ref9)<span class="c33">** This is an opinion **</span>
 
 </div>
 
 <div>
 
-[[10]](#ftnt_ref10)<span class="c33"> https://www.publico.pt/2020/02/03/politica/noticia/joacine-deixa-representar-livre-passa-deputada-naoinscrita-partir-hoje-1902643</span>
+[[10]](#ftnt_ref10)<span class="c33"> [Joacine deixa de representar Livre](https://www.publico.pt/2020/02/03/politica/noticia/joacine-deixa-representar-livre-passa-deputada-naoinscrita-partir-hoje-1902643)</span>
 
 </div>
 
 <div>
 
-[[11]](#ftnt_ref11)<span class="c40"> </span><span class="c27">[https://www.washingtonpost.com/technology/2021/10/26/facebook-angry-emoji-algorithm/](https://www.google.com/url?q=https://www.washingtonpost.com/technology/2021/10/26/facebook-angry-emoji-algorithm/&sa=D&source=editors&ust=1642174952479225&usg=AOvVaw34dscjTEDpFyfRUEch4xtN)</span><span class="c33"> / Emphasis by the author</span>
+[[11]](#ftnt_ref11)<span class="c40"> </span><span class="c27"> [Washington Post - Five points for anger, one for a ‘like’: How Facebook’s formula fostered rage and misinformation](https://www.washingtonpost.com/technology/2021/10/26/facebook-angry-emoji-algorithm/)</span><span class="c33"> / **Emphasis by the author**</span>
 
 </div>
 
 <div>
 
-[[12]](#ftnt_ref12)<span class="c40">At the time the data was extracted. Please refer to page</span> <span class="c18 c40">26</span><span class="c33"> for normalized analysis</span>
+[[12]](#ftnt_ref12)<span class="c40"> At the time the data was extracted. Please refer to page</span> <span class="c18 c40">26</span><span class="c33"> for normalized analysis</span>
 
 </div>
 
 <div>
 
-[[13]](#ftnt_ref13)<span class="c33"> Full terms of this License can be found here https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode</span>
+[[13]](#ftnt_ref13)<span class="c33">[ Full terms of this License can be found here](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)</span>
 
 </div>
 
-<div class="c63">
-
-[[a]](#cmnt_ref1)<span class="c37 c36 c57">Might suggest that Ventura's content is somehow more action prone to users</span>
-
-</div>
