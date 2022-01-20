@@ -1346,83 +1346,58 @@
 
 * * *
 
-<div>
+
 
 [[1]](#ftnt_ref1)<span class="c40"> </span><span class="c35"> [The tweet](https://twitter.com/JGomes_PT/status/1480208101378822144)<span class="c35"> had</span> <span class="c35 c67">43490</span><span class="c9"> impressions on January 10th 2022\.</span>
 
-</div>
 
-<div>
 
 [[2]](#ftnt_ref2)<span class="c33"> The media group that owns SIC was a victim of a ransomware attack during this period.The values shown do not reflect the channel’s communication in a normal period.</span>
 
-</div>
 
-<div>
 
 [[3]](#ftnt_ref3)<span class="c33"> The media group that owns SIC Notícias was a victim of a ransomware attack during this period.The values shown do not reflect the channel’s communication in a normal period.</span>
 
-</div>
 
-<div>
 
 [[4]](#ftnt_ref4)<span class="c40">[PT]</span><span class="c27">[Cision Report](https://www.cision.pt/2021/09/imprensa-circulacao-paga-cresce-face-a-2020/)</span><span class="c33"> </span>
 
-</div>
 
-<div>
 
 [[5]](#ftnt_ref5)<span class="c9"> José Rodrigues dos Santos, who shares the same family names with the candidate, is a Portuguese journalist and book author. The search settings take that into account and ignore any results where “José Rodrigues dos Santos” appears.</span>
 
-</div>
 
-<div>
 
 [[6]](#ftnt_ref6)<span class="c40"> </span><span class="c43"> **weighted**  —  Likes 1x Shares 1x Comments 1x Love 1x Wow 1x Haha 1x Sad 1x Angry 1x Care 1x</span>
 
-</div>
 
-<div>
 
 [[7]](#ftnt_ref7)<span class="c33"> Please refer to Settings and Keywords for all the keywords used in the search</span>
 
-</div>
 
-<div>
 
 [[8]](#ftnt_ref8)<span class="c33"> Although the official color of PCP (Portuguese Communist Party) is red, and the color of the coalition between PCP and the Portuguese Green party is blue, a decision was made to use yellow as the color for Jerónimo de Sousa, as both official colors don’t have enough contrast when joined with the other parties. The yellow chosen is the one from the [flag of the former Soviet Union](https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union)</span>
 
-</div>
 
-<div>
 
 [[9]](#ftnt_ref9)<span class="c33">** This is an opinion **</span>
 
-</div>
 
-<div>
 
 [[10]](#ftnt_ref10)<span class="c33"> [Joacine deixa de representar Livre](https://www.publico.pt/2020/02/03/politica/noticia/joacine-deixa-representar-livre-passa-deputada-naoinscrita-partir-hoje-1902643)</span>
 
-</div>
 
-<div>
 
 [[11]](#ftnt_ref11)<span class="c40"> </span><span class="c27"> [Washington Post - Five points for anger, one for a ‘like’: How Facebook’s formula fostered rage and misinformation](https://www.washingtonpost.com/technology/2021/10/26/facebook-angry-emoji-algorithm/)</span><span class="c33"> / **Emphasis by the author**</span>
 
-</div>
 
-<div>
 
 [[12]](#ftnt_ref12)<span class="c40"> At the time the data was extracted. Please refer to page</span> <span class="c18 c40">26</span><span class="c33"> for normalized analysis</span>
 
-</div>
-
-<div>
 
 [[13]](#ftnt_ref13)<span class="c33">[ Full terms of this License can be found here](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)</span>
 
-</div>
+* * *
   
 # About the author
   
