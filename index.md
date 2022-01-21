@@ -1400,19 +1400,22 @@
 * * *
   
 # About the author
-  
-On February 4th 2021, I broke Twitter. This might not be the most interesting fact about me.
 
-In order to maintain my artistic integrity, my tweets are presented in VGA 640X480
+On February 4th 2021, I broke Twitter. This *might* not be the most interesting fact about me. 
 
-Passioante about open data, open source, civil society empowerment through techology, OSINT, data exploration and visualization.
+**In order to maintain my artistic integrity, my tweets are presented in VGA 640X480** 
 
-“*What whiskey will not cure, there is no cure for*” – Irish proverb
-  
-You can find my Portuguese tweets [here](https://twitter.com/JGomes_PT) and my tweets in English [here](https://twitter.com/JGomes_EU). 
+Passioante about open data, open source, civil society empowerment through techology, OSINT, data exploration and visualization. 
 
-[VOST Portugal National Coordinator](https://twitter.com/VOSTPT)
+*“What whiskey will not cure, there is no cure for.”* – Irish proverb
 
-[VOST Europe COO](https://twitter.com/VOSTeurope)
+
+[VOST Portugal](https://twitter.com/vostpt)'s national coordinator
+
+[VOST Europe](https://vosteurope.org)'s COO
+
+[Social Media-Driven Disaster Risk Management (SMDRM) Task Force](https://publications.jrc.ec.europa.eu/repository/handle/JRC124963)  member
+
+
   
 * * *
