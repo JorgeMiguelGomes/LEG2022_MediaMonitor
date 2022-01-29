@@ -6,6 +6,10 @@
 
 **Full raw dataset can be found [here](https://github.com/JorgeMiguelGomes/LEG2022_MediaMonitor/tree/main/legislativas_2022_media_monitor_29jan2022/data_products)**
 
+These datasets can be used under a [**Creatve Commons License 4.0 BY-SA-NC**](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+When using **Crowdtangle** datasets please observe the mandatory references you should make in your work, [**that can be found here**](https://help.crowdtangle.com/en/articles/4558716-understanding-and-citing-crowdtangle-data)
+
 ## Next Steps
 
 1. Datasets' filtering 
