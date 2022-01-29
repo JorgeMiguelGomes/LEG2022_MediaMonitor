@@ -1,3 +1,19 @@
+# LEGISLATIVAS - Media Analysis Update 29JAN2021
+
+## Extracted new datasets
+
+**Raw Datasets can be found [here](https://github.com/JorgeMiguelGomes/LEG2022_MediaMonitor/tree/main/legislativas_2022_media_monitor_29jan2022/legislativas_2022_media_monitor_29jan2022_raw_data)**
+
+**Full raw dataset can be found [here](https://github.com/JorgeMiguelGomes/LEG2022_MediaMonitor/tree/main/legislativas_2022_media_monitor_29jan2022/data_products)**
+
+## Next Steps
+
+1. Datasets' filtering 
+2. Dataset's analysis 
+3. Full Final Report 
+
+* * * 
+
 # Legislativas2022 - Media Analysis
 
 <span class="c2">How do media outlets' Facebook pages,  cover the main candidates to the Portuguese 2022 legislative elections</span>
