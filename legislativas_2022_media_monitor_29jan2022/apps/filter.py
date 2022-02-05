@@ -14,8 +14,8 @@ graphs_base_path = "../legislativas_2022_media_monitor_29jan2022_graphs/"
 
 candidate_color_map = {
     "ruirio": "#FF6400",
-    "franciscosantos ": "#0B6AB1",
-    "antoniocosta": "#E31F26",
+    "franciscosantos": "#0B6AB1",
+    "antoniocosta": "#F1A0A2",
     "ruitavares": "#00CE8C",
     "catarinamartins": "#C90635",
     "jeronimosousa": "#025298",
