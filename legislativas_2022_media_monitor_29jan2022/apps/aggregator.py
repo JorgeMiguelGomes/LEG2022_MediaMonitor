@@ -55,7 +55,7 @@ work_df = df_all[['candidato','Page Name','Post Created Date','Total Interaction
 # delete commas from Total Interactions
 work_df= work_df.replace(',','', regex=True)
 
-# Save treated dataset to disk 
-work_df.to_csv('../data_products/legislativas_2022_all_candidates_filtered.csv')
+# Optionally you can save the dataframe to csv 
+# Use work_df.to_csv('path/filename.csv')
 
 
