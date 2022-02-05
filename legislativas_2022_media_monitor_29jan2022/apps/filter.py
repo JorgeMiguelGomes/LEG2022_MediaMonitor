@@ -8,6 +8,20 @@ import plotly.express as px
 import pandas as pd
 import os
 
+# define color for each candidate 
+
+candidate_color_map={
+                "ruirio":"#FF6400",
+                "franciscosantos ":"#0B6AB1",
+                "antoniocosta":"#E31F26",
+                "ruitavares":"#00CE8C",
+                "catarinamartins":"#C90635",
+                "jeronimosousa": "#025298",
+                "andreventura":"#202056",
+                "joaofigueiredo":"#00AEEF",
+                "inesreal":"#00798E"
+                            }
+
 # csv to pandas dataframe
 df = pd.read_csv('../legislativas_2022_media_monitor_29jan2022_raw_data/crowdtangle_2022_01_29_ruitavares_last_30_days_dataset_raw.csv')
 
