@@ -21,6 +21,9 @@ percentages = totals.groupby(level=0).transform('sum').rdiv(totals).mul(100).rou
 
 df_final = totals.join(percentages, lsuffix='', rsuffix='_Percentages').reset_index()
 
+
+df_final.to_csv('../data_products/legislativas_2022_final_dataset_percentages.csv')
+
 print(df_final.head())
 
 # Create color for each candidate 
