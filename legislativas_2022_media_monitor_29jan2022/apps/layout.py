@@ -5,6 +5,8 @@ from dash import Dash, dcc, html, Input, Output
 import pandas as pd
 import plotly.express as px 
 
+
+
 df = pd.read_csv('https://raw.githubusercontent.com/JorgeMiguelGomes/LEG2022_MediaMonitor/main/legislativas_2022_media_monitor_29jan2022/data_products/legislativas_2022_final_dataset_percentages.csv')
 
 df_individuals  = pd.read_csv('https://raw.githubusercontent.com/JorgeMiguelGomes/LEG2022_MediaMonitor/main/legislativas_2022_media_monitor_29jan2022/data_products/legislativas_2022_all_candidates_filtered.csv')
@@ -15,7 +17,7 @@ df_individuals_melt=pd.melt(df_individuals,id_vars=['candidato','Page Name'])
 
 available_candidates = df_individuals_melt['candidato'].unique()
 available_pages = df_individuals_melt['Page Name'].unique()
-available_metrcis = df_individuals_melt['variable'].unique()
+available_metrics = df_individuals_melt['variable'].unique()
 
 
 
@@ -40,17 +42,18 @@ pie_color_map = {
     "Love":"#5F468F"
 }
 
-# -------------------- APP starts here ---------------------------
-
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 
-app.layout = html.Div([
-    html.Div(children=[
-        html.H1(children='Legislativas Media Monitor')
 
 
-        ],className='twelve columns'),
 
+app.layout = html.Div(children=[
+    html.H2(children='Legislativas 2022 Media Monitor'),
+
+    html.Div(children='''
+        Monitoring media mentions of party leaders on Facebook
+    '''),
+    html.Br(),
     html.Div(children=[
         dcc.Tabs([
             dcc.Tab(label='Totals', children=[
@@ -215,7 +218,6 @@ app.layout = html.Div([
     ])
 ])
 
-
 @app.callback(
     Output(component_id='graph_totals', component_property='figure'),
     [Input(component_id='dropdown_total', component_property='value')]
@@ -279,6 +281,3 @@ def build_graph_shares_comments(column_chosen):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-#--------------- End Dashboard -----------------
