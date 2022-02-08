@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-# Tabs Example 
+# Full Dashboard --- WORK IN PROGRESS 
 
 import time
-
 import dash
 import dash_bootstrap_components as dbc
-import numpy as np
 import plotly.express as px
 import pandas as pd
 from dash import Input, Output, dcc, html
@@ -40,14 +38,14 @@ candidate_color_map = {
 }
 
 pie_color_map = {
-    "Angry":"#666666",
-    "Love":"#5F468F"
+    "Angry":"#EB9486",
+    "Love":"#CAE7B9"
 }
 
 
-# Start app 
+# START APP -----------------------------------------------------
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP],suppress_callback_exceptions=True)
 
 app.layout = dbc.Container(
     [
@@ -59,12 +57,8 @@ app.layout = dbc.Container(
             dbc.Col(html.Hr(style={'borderWidth': "2vh", "width": "100%", "borderColor": "#EB9486","opacity": "unset"}),width={'size':2}),
             dbc.Col(html.Hr(style={'borderWidth': "2vh", "width": "100%", "borderColor": "#7E7F9A","opacity": "unset"}),width={'size':2}),
             dbc.Col(html.Hr(style={'borderWidth': "2vh", "width": "100%", "borderColor": "#97A7B3","opacity": "unset"}),width={'size':2}),
-
-            
-
             ],className="g-0",
         ), # end of first row 
-
 
         # Second Row 
         dbc.Row( 
@@ -85,8 +79,7 @@ app.layout = dbc.Container(
         # Fourth Row 
         dbc.Row(dbc.Col(html.Hr(style={'borderWidth': "0.5vh", "width": "100%", "borderColor": "#F3DE8A","opacity": "unset"}),width={'size':10, 'offset':0}),), 
 
-        # Fith Row - Tabs
-
+        # Fith Row - TABS
         dbc.Tabs(
             [
                 dbc.Tab(label="About", tab_id="method", label_style={"color": "#CAE7B9"},tab_style={'background-color': '#97A7B3'},active_label_style={"background-color":"#080808"}),      
@@ -138,44 +131,43 @@ def build_graph_total_stacked(column_chosen):
 @app.callback(
     Output(component_id='graph_individuals', component_property='figure'),
     [Input(component_id='dropdown_candidates', component_property='value')],
+
 )
 
+# Pie Chart for Candidates 
 
 def build_graph_individuals(column_chosen):
     dff = df
     totals_sentiment = dff.groupby(['candidato'])[['Love','Angry']].sum().reset_index()
     totals_sentiment_melt = pd.melt(totals_sentiment,id_vars="candidato")
     totals_sentiment_melt = totals_sentiment_melt[totals_sentiment_melt['candidato'] == column_chosen]
-
-
     fig_individuals = px.pie(totals_sentiment_melt,names="variable",values="value",hole=0.5, color="variable",color_discrete_map=pie_color_map)
-
-    fig_shares_comments = px.pie(totals_sentiment_melt,names="variable",values="value",hole=0.5, color="variable",color_discrete_map=pie_color_map)
-
     return fig_individuals
+
+# Pie Chart for Media Outlets     
 
 @app.callback(
     Output(component_id='graph_shares_comments', component_property='figure'),
-    
     [Input(component_id='dropdown_media_outlet', component_property='value')],
 )
 
 def build_graph_shares_comments(column_chosen):
+    # Data Treatment 
     dff = df
     total_shares_comments = dff.groupby(['Page Name'])[['Love','Angry']].sum().reset_index()
     total_shares_comments_melt = pd.melt(total_shares_comments,id_vars="Page Name")
     total_shares_comments_melt = total_shares_comments_melt[total_shares_comments_melt['Page Name'] == column_chosen] 
-
-    fig_shares_comments = px.bar(total_shares_comments_melt,x="variable",y="value", color="variable",color_discrete_map=pie_color_map, template='plotly_white')   
-
+    # Pice Chart 
+    fig_shares_comments = px.pie(total_shares_comments_melt,names="variable",values="value", color="variable",hole=0.4,color_discrete_map=pie_color_map, template='plotly_white')   
     return fig_shares_comments
 
-
+# TABS CALLBACKS -------------------------------------
 
 @app.callback(Output("tab-content", "children"),
     [Input("tabs", "active_tab")])
 
 def switch_tab(at):
+    # TAB 01 
     if at == "method":
         tab1_content = dbc.Row(
             [
@@ -229,10 +221,48 @@ Monitor, quantitatively, how many times media outlets in Portugal mention each c
 
         return tab1_content 
 
+    # TAB 02    
+    elif at == "totals":
+        
+
+        tab2_content = dbc.Row(
+                        [
+                        dbc.Col(
+                            # DROPDOWN TAB 2 
+                            dcc.Dropdown(
+                                id='dropdown_total',
+                                options=[{'label': 'Total Interactions', 'value': 'Total Interactions'} ,
+                                         {'label': 'Total Likes','value': 'Likes'},
+                                         {'label': 'Total Comments','value': 'Comments'},
+                                         {'label': 'Total Shares','value': 'Shares'},
+                                         {'label': 'Total Love','value': 'Love'},
+                                         {'label': 'Total Angry','value': 'Angry'},
+                                    ],
+                                    optionHeight=35,                        
+                                    value='Total Interactions',             
+                                    disabled=False,                         
+                                    multi=False,                            
+                                    searchable=True,                        
+                                    search_value='',                        
+                                    placeholder='Please select...',         
+                                    clearable=True,                         
+                                    style={'width':"50"},                 
+                                    ),
+                            ),
+                        # GRAPH TAB 2 
+                        dbc.Row(dbc.Col(dcc.Graph(id='graph_totals')),),
+                        
+                    ],
+                    ),                                             
+
+        return tab2_content
+
+    # TAB 03 
     elif at == "stacked":
         tab3_content = dbc.Row(
                         [
                             dbc.Col(
+                                # DROPDOWN TAB 03
                                 dcc.Dropdown(
                                     id='dropdown_total_stacked',
                                     options=[
@@ -243,63 +273,96 @@ Monitor, quantitatively, how many times media outlets in Portugal mention each c
                                          {'label': 'Total Love','value': 'Love_Percentages'},
                                          {'label': 'Total Angry','value': 'Angry_Percentages'},
                                 ],
-                                optionHeight=35,                        #height/space between dropdown options
-                                value='Total Interactions_Percentages',             #dropdown value selected automatically when page loads
-                                disabled=False,                         #disable dropdown value selection
-                                multi=False,                            #allow multiple dropdown values to be selected
-                                searchable=True,                        #allow user-searching of dropdown values
-                                search_value='',                        #remembers the value searched in dropdown
-                                placeholder='Please select...',         #gray, default text shown when no option is selected
-                                clearable=True,                         #allow user to removes the selected value
-                                style={'width':"100%"},                 #use dictionary to define CSS styles of your dropdown          
+                                optionHeight=35,                        
+                                value='Total Interactions_Percentages',             
+                                disabled=False,                         
+                                multi=False,                            
+                                searchable=True,                        
+                                search_value='',                        
+                                placeholder='Please select...',         
+                                clearable=True,                         
+                                style={'width':"100%"},                   
                                 ),            
                             ),
+                        # GRAPH TAB 3 
                         dbc.Row(dbc.Col(dcc.Graph(id='graph_totals_stacked')),),    
                         ],
         ),
 
         return tab3_content
 
-    elif at == "totals":
-        
-
-        tab2_content = dbc.Row(
+    # TAB 04
+    elif at == "love_angry":
+        tab4_content = dbc.Row(
                         [
-                        dbc.Col(
-                            dcc.Dropdown(
-                                id='dropdown_total',
-                                options=[{'label': 'Total Interactions', 'value': 'Total Interactions'} ,
-                                         {'label': 'Total Likes','value': 'Likes'},
-                                         {'label': 'Total Comments','value': 'Comments'},
-                                         {'label': 'Total Shares','value': 'Shares'},
-                                         {'label': 'Total Love','value': 'Love'},
-                                         {'label': 'Total Angry','value': 'Angry'},
+                            dbc.Col(
+                                [ 
+                                dcc.Dropdown(
+                                id='dropdown_candidates',
+                                options=[{'label': i, 'value': i} for i in df_individuals_melt.candidato.unique()
                                     ],
                                     optionHeight=35,                        #height/space between dropdown options
-                                    value='Total Interactions',             #dropdown value selected automatically when page loads
+                                    value='António Costa',             #dropdown value selected automatically when page loads
                                     disabled=False,                         #disable dropdown value selection
                                     multi=False,                            #allow multiple dropdown values to be selected
                                     searchable=True,                        #allow user-searching of dropdown values
                                     search_value='',                        #remembers the value searched in dropdown
                                     placeholder='Please select...',         #gray, default text shown when no option is selected
                                     clearable=True,                         #allow user to removes the selected value
-                                    style={'width':"50"},                 #use dictionary to define CSS styles of your dropdown
+                                    style={'width':"100%"},                 #use dictionary to define CSS styles of your dropdown
+                                    # className='select_box',               #activate separate CSS document in assets folder
+                                    # persistence=True,                     #remembers dropdown value. Used with persistence_type
+                                    # persistence_type='memory'             #remembers dropdown value selected until...
+                                    ),  
+                                dbc.Col(
+                                    dcc.Graph(id='graph_individuals'),
                                     ),
-                            #width={'size':4,'offset':0}
-                            ),
-                        dbc.Row(dbc.Col(dcc.Graph(id='graph_totals')),),
-                        
-                    ],
-                    ),                                             
+                                ],width={'size':6, 'offset':0}
+                            ), 
 
-        return tab2_content
+                            dbc.Col(
+                                [ 
+                                dcc.Dropdown(
+                                id='dropdown_media_outlet',
+                                options=[{'label': i, 'value': i} for i in df['Page Name'].unique()
+                                ],
+                                optionHeight=35,                        #height/space between dropdown options
+                                value='Agência Lusa',                   #dropdown value selected automatically when page loads
+                                disabled=False,                         #disable dropdown value selection
+                                multi=False,                            #allow multiple dropdown values to be selected
+                                searchable=True,                        #allow user-searching of dropdown values
+                                search_value='',                        #remembers the value searched in dropdown
+                                placeholder='Please select...',         #gray, default text shown when no option is selected
+                                clearable=True,                         #allow user to removes the selected value
+                                style={'width':"100%"},                 #use dictionary to define CSS styles of your dropdown
+                                # className='select_box',               #activate separate CSS document in assets folder
+                                # persistence=True,                     #remembers dropdown value. Used with persistence_type
+                                # persistence_type='memory'             #remembers dropdown value selected until...
+                                                      
+                                    ),  
+                                dbc.Col(
+                                    dcc.Graph(id='graph_shares_comments'),
+                                    ),
+                                ],width={'size':6, 'offset':0}
+                            ), 
 
+                        ],
+        ),
+
+        return tab4_content
+    
+    # TAB 05 
     elif at == "conclusions":
         tab5_content = html.P("Blah Blab Blaah ")
         return tab5_content 
 
+    # Error Message 
     return html.P("This shouldn't ever be displayed...")
 
 
 if __name__ == "__main__":
     app.run_server(debug=True, port=8888)
+
+
+
+# APP END 
