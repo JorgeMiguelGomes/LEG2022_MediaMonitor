@@ -45,7 +45,9 @@ pie_color_map = {
 
 # START APP -----------------------------------------------------
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP],suppress_callback_exceptions=True)
+app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP],suppress_callback_exceptions=True,
+                meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
+                )
 
 app.layout = dbc.Container(
     [
@@ -142,6 +144,7 @@ def build_graph_individuals(column_chosen):
     totals_sentiment_melt = pd.melt(totals_sentiment,id_vars="candidato")
     totals_sentiment_melt = totals_sentiment_melt[totals_sentiment_melt['candidato'] == column_chosen]
     fig_individuals = px.pie(totals_sentiment_melt,names="variable",values="value",hole=0.5, color="variable",color_discrete_map=pie_color_map)
+    column_chosen = candidato_filter 
     return fig_individuals
 
 # Pie Chart for Media Outlets     
@@ -153,7 +156,7 @@ def build_graph_individuals(column_chosen):
 
 def build_graph_shares_comments(column_chosen):
     # Data Treatment 
-    dff = df
+    dff = df[['candidato'] == candidato_filter]
     total_shares_comments = dff.groupby(['Page Name'])[['Love','Angry']].sum().reset_index()
     total_shares_comments_melt = pd.melt(total_shares_comments,id_vars="Page Name")
     total_shares_comments_melt = total_shares_comments_melt[total_shares_comments_melt['Page Name'] == column_chosen] 
