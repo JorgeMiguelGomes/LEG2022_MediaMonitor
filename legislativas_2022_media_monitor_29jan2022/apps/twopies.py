@@ -91,20 +91,38 @@ app.layout = dbc.Container(
     Input(component_id='dropdown_candidates', component_property='value')
 )
 
-def build_graph_shares_comments(column_chosen):
-    # Data Treatment 
+def build_graphs(column_chosen, candidato_filter):
+    
+    # Data Treatment for candidate graph 
+    dff = df
+    totals_sentiment = dff.groupby(['candidato'])[['Love','Angry']].sum().reset_index()
+    totals_sentiment_melt = pd.melt(totals_sentiment,id_vars="candidato")
+    # totals_sentiment_melt = totals_sentiment_melt[totals_sentiment_melt['candidato'] == column_chosen]
+    totals_sentiment_melt = totals_sentiment_melt[totals_sentiment_melt['candidato'] == candidato_filter]
+    print("TOTALS SENTIMENT MELT")
+    print(totals_sentiment_melt)
+
+    # Data Treatment for media graph 
+    dff_m = df[df['candidato']== candidato_filter]
+    totals_sentiment_media = dff_m.groupby(['Page Name'])[['Love','Angry']].sum().reset_index()
+    totals_sentiment_media_melt = pd.melt(totals_sentiment_media,id_vars="Page Name")
+    totals_sentiment_media_melt = totals_sentiment_media_melt[totals_sentiment_media_melt['Page Name'] == column_chosen]
+    print("TOTAL MEDIA  SENTIMENT MELT")
+    print(totals_sentiment_media_melt)
 
 
-    dff = df[['candidato'] == candidato_filter] # RETURNS ERROR "NameError: name 'candidato_filter' is not defined"
-    total_shares_comments = dff.groupby(['Page Name'])[['Love','Angry']].sum().reset_index()
-    total_shares_comments_melt = pd.melt(total_shares_comments,id_vars="Page Name")
-    total_shares_comments_melt = total_shares_comments_melt[total_shares_comments_melt['Page Name'] == column_chosen] 
+    
+    
+    
     # Pice Charts
 
+    
 
-    fig_individuals = px.pie(totals_sentiment_melt,names="variable",values="value",hole=0.5, color="variable",color_discrete_map=pie_color_map)
-    fig_shares_comments = px.pie(total_shares_comments_melt,names="variable",values="value", color="variable",hole=0.4,color_discrete_map=pie_color_map, template='plotly_white')   
-    return fig_shares_comments, fig_individuals
+    fig_candidates = px.pie(totals_sentiment_media_melt,names="variable",values="value",hole=0.5, color="variable",color_discrete_map=pie_color_map)
+    fig_media = px.pie(totals_sentiment_melt,names="variable",values="value",hole=0.6, color="variable",color_discrete_map=pie_color_map)
+    
+    return fig_candidates, fig_media 
+    
 
 
 
