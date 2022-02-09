@@ -170,7 +170,7 @@ app.layout = html.Div(children=[
                                 ),                                      #'memory': browser tab is refreshed
                                                                         #'session': browser tab is closed
                                                                         #'local': browser cookies are deleted
-                                                                  #'session': browser tab is closed
+                                                                        #'session': browser tab is closed
                                  
                                  
                         ],className='two columns'),

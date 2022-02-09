@@ -172,7 +172,7 @@ app.layout = html.Div([
 				dbc.Col(html.H1("Legislativas 2022 Media Monitor"), width={'size': 6, 'offset':1}), #First Column
 				dbc.Col(html.H4("Data from CrowdTangle",style={"color":"#7E7F9A"}), width={'size': 5, 'offset':0}), #Second Column
 			], # Close Children of first Row
-		), # end of first row  
+		), # end of second row  
 
 		dbc.Row(
 			[
@@ -185,7 +185,6 @@ app.layout = html.Div([
 		dbc.Row(dbc.Col(html.Hr(style={'borderWidth': "0.5vh", "width": "100%", "borderColor": "#F3DE8A","opacity": "unset"}),width={'size':10, 'offset':1}),), 
 
 		# fourth  row : lets add the tabs
-		
 
 		
 			

@@ -82,7 +82,7 @@ app.layout = dbc.Container(
 #     candidato_filter = column_chosen
 #     return fig_individuals
 
-# Pie Chart for Media Outlets     
+# Pie Chart for Candidate and Media Outlets     
 
 @app.callback(
     Output(component_id='graph_shares_comments', component_property='figure'),
