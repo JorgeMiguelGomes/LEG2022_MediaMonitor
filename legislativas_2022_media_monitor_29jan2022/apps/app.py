@@ -539,5 +539,8 @@ Monitor, quantitatively, how many times media outlets in Portugal mention each c
 if __name__ == "__main__":
     app.run_server(debug=True, port=8888)
 
+# END APP 
 
-# APP END
+# CREDITS 
+
+
