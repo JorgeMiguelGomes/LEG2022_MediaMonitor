@@ -210,7 +210,7 @@ app.layout = dbc.Container(
     [Input(component_id="dropdown_total", component_property="value")],
 )
 def build_graph_total(column_chosen):
-    dff = df
+    dff = df.reset_index().sort_values(["Total Interactions"], ascending=False)
     fig = px.bar(
         dff,
         x="Page Name",
@@ -218,7 +218,26 @@ def build_graph_total(column_chosen):
         color="candidato",
         color_discrete_map=candidate_color_map,
         template="plotly_white",
+        labels={
+        "Page Name":"Media Outlets", column_chosen:"AMOUNT OF REACTIONS", "candidato":"CANDIDATES"},
+        custom_data=[dff["candidato"]],
     )
+
+    fig.update_traces(hoverinfo="none", hovertemplate=None)
+
+    fig.update_traces(
+        hovertemplate="<br>".join(
+            [
+                "<b>LEG2022</b>",
+                "Period: 30DEZ2021 - 29JAN20222",
+                "<b>CANDIDATE: %{customdata[0]}</b>",
+                "Media Outlet: %{x}",
+                "Total Amount: <b>%{y}</b>",
+            ],
+        ),
+    )
+    fig.update_layout(hoverlabel_bgcolor="black")
+
     return fig
 
 
