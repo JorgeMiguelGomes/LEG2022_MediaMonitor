@@ -59,7 +59,7 @@ app.layout = dbc.Container(
                 dbc.Col(
                     html.Hr(
                         style={
-                            "borderWidth": "2vh",
+                            "borderWidth": "5vh",
                             "width": "100%",
                             "borderColor": "#CAE7B9",
                             "opacity": "unset",
@@ -537,7 +537,7 @@ Monitor, quantitatively, how many times media outlets in Portugal mention each c
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8888)
+    app.run_server(debug=True, port=8850)
 
 # END APP 
 
